@@ -5,13 +5,16 @@ Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using My
 * Robot wheels move according to armband gyroscope axes
 * EMOTIV overrides robot to force stop when user is not concentrating
 
-## Libraries used :
+## Libraries/SDKs/etc. used :
 #### On the Rasp. Pi: 
 *  [PyoConnect 1.0](http://www.fernandocosentino.net/pyoconnect/) - for using Myo armband with the Pi
 *  [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for using Network Tables with the Pi
-*  [Adafruit BBIO 12C](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black/i2c) / [Adafruit PWM Servo Library](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy) - for driving motors with 16-Channel PWM Pi HAT
+*  [Adafruit PWM Servo Library](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy) / [BBIO 12C](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black/i2c) - for driving motors with 16-Channel PWM Pi HAT
+#### On the Local PC :
+* [Emotiv SDK](https://github.com/Emotiv/community-sdk) - for using Emotiv EPOC information and using it
+* [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for the PC to send information to the Rasp. Pi
 
-## Installing :
+## Installing Libraries on Rasp. Pi:
 #### PyoConnect :
 Plug in bluetooth adapter for armband into Pi.
 ```
