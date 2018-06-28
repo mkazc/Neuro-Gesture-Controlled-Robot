@@ -6,13 +6,14 @@ Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using My
 * EMOTIV overrides robot to force stop when user is not concentrating
 
 ## Libraries/SDKs/etc. used :
+*  [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for using networktables between the Rasp. Pi and the PC
 #### On the Rasp. Pi: 
 *  [PyoConnect 1.0](http://www.fernandocosentino.net/pyoconnect/) - for using Myo armband with the Pi
-*  [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for using Network Tables with the Pi
 *  [Adafruit PWM Servo Library](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy) / [BBIO 12C](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black/i2c) - for driving motors with 16-Channel PWM Pi HAT
+* Pynetworktables
 #### On the Local PC :
 * [Emotiv SDK](https://github.com/Emotiv/community-sdk) - for using Emotiv EPOC information and using it
-* [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for the PC to send information to the Rasp. Pi
+* Pynetworktables
 
 ## Installing Libraries on Rasp. Pi:
 #### PyoConnect :
