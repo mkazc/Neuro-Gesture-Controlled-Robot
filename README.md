@@ -43,8 +43,12 @@ sudo pip install pynetworktables
 Install RPi.GPIO library.
 ```
 sudo apt-get update
-sudo apt-get install -y python3 python3-pip python-dev
-sudo pip3 install rpi.gpio
+
+#For Python 2
+sudo apt-get -y install python-rpi.gpio
+
+#For Python 3
+sudo apt-get -y install python3-rpi.gpi
 ```
 Download the code (legacy branch, code used here)
 ```
