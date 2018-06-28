@@ -1,12 +1,9 @@
 # Neuro-Gesture-Controlled-Robot
-Controls small two-wheeled bot with Raspberry Pi 3 using Myo armband and EMOTIV EPOC
+Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using Myo armband and EMOTIV EPOC
 
 ## Overview :
 * Robot wheels move according to armband gyroscope axes
-* EMOTIV overrides robot to stop when user is not concentrating
-* Pi controls motors with HAT
-* Armband connects to Pi through Bluetooth chip
-* PC sends EMOTIV information through networktables
+* EMOTIV overrides robot to force stop when user is not concentrating
 
 ## Libraries used :
 *  [PyoConnect 1.0](http://www.fernandocosentino.net/pyoconnect/) - for using Myo armband with the Pi
