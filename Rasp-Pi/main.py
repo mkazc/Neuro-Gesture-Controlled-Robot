@@ -19,10 +19,10 @@ while True:
     left, right = my.motor_speeds()
     if nt.isConcentrating == None:
         bot.drive(left, right)
-        print("No emotiv.... Left: " + str(left) + "; Right: " + str(right))
+        print("Not Connected... Left: " + str(left) + "; Right: " + str(right))
     if nt.isConcentrating == True:
         bot.drive(left, right)
         print("Left: " + str(left) + "; Right: " + str(right))
-    else:
+    elif nt.isConcentrating == False:
         print("Not concentrating")
         bot.drive(0,0)

@@ -57,7 +57,7 @@ class Myoband(object):
     def start(self):
         myo.run()
         myo.tick()
-    def motor_speeds(self, pitch,yaw,roll):
+    def motor_speeds(self):
         pitch, yaw, roll = myo.rotPitch(), myo.rotYaw(), myo.rotRoll()
         left, right = self.orientation_to_motor_speeds(pitch, yaw, roll)
         return left, right
