@@ -60,12 +60,20 @@ Detect HAT
 ```
 sudo i2cdetect -y 1
 ```
+###### Old:
 Download the code (legacy branch, code used here)
 ```
+sudo apt-get install -y git build-essential python-dev
 git clone https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy
 ```
 Use the files in Adafruit_PWM_Servo_Driver.
-
+###### New:
+```
+sudo apt-get install -y git build-essential python-dev
+git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
+cd Adafruit_Python_PCA9685
+sudo python setup.py install
+```
 ## Notes :
 * The Pi keeps a [static ip address](http://www.circuitbasics.com/how-to-set-up-a-static-ip-on-the-raspberry-pi/) as does the PC
 * The PC and Pi connect to same private mobile hotspot
