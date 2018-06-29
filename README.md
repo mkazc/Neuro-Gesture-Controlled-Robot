@@ -50,6 +50,16 @@ sudo apt-get -y install python-rpi.gpio
 #For Python 3
 sudo apt-get -y install python3-rpi.gpi
 ```
+Install I2C tools
+```
+sudo apt-get install python-smbus
+sudo apt-get install i2c-tools
+
+```
+Detect HAT
+```
+sudo i2cdetect -y 1
+```
 Download the code (legacy branch, code used here)
 ```
 git clone https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy
