@@ -20,7 +20,7 @@ while True:
     if nt.isConcentrating == None:
         bot.drive(left, right)
         print("Not Connected... Left: " + str(left) + "; Right: " + str(right))
-    if nt.isConcentrating == True:
+    elif nt.isConcentrating == True:
         bot.drive(left, right)
         print("Left: " + str(left) + "; Right: " + str(right))
     elif nt.isConcentrating == False:
