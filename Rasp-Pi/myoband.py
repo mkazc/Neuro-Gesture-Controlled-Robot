@@ -74,10 +74,6 @@ class Orientation_Speeds(object):
     ls_list = []
     #rs list is right motor speed values
     rs_list = []
-    def ___init___(self):
-        self.value = value
-        self.ls_list = ls_list
-        self.rs_list = rs_list
     def getValues(self, value):
         self.value = value
         axis_list = self.axis_list
