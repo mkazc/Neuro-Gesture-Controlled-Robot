@@ -1,6 +1,12 @@
 # Neuro-Gesture-Controlled-Robot
 Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using Myo armband and EMOTIV EPOC
 
+## OS / Versions
+
+###### Raspberry Pi 3 OS : Raspbian GNU/Linux 9 (stretch)
+###### Python Version : 2.7.13
+###### GPiO Version: 0.6.3
+
 ## Overview :
 * Robot wheels move according to armband gyroscope axes
 * EMOTIV overrides robot to force stop when user is not concentrating
