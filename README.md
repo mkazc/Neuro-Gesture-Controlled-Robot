@@ -60,7 +60,6 @@ Install I2C tools
 ```
 sudo apt-get install python-smbus
 sudo apt-get install i2c-tools
-
 ```
 Detect HAT
 ```
