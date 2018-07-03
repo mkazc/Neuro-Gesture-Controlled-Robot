@@ -61,12 +61,35 @@ Install I2C tools
 sudo apt-get install python-smbus
 sudo apt-get install i2c-tools
 ```
-Detect HAT
+Install Kernel Support with `sudo raspi-config`
+
+> Interfacing Options/Advanced > I2C > Enable
+
 ```
-sudo i2cdetect -y 1
+sudo reboot
 ```
+After rebooting, detect HAT `sudo i2cdetect -y 1`, which will output a table.
+> It should show two I2C addresses are in use – 0x40 and 0x70.
+
+|  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | a | b | c | d | e | f |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---|
+| 00 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 10 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 20 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 30 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 40 : | 40  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 50 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 60 : | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+| 70 : | 70  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- | --  | -- |
+
+> [In the terminal](https://cdn-learn.adafruit.com/assets/assets/000/003/055/medium800/learn_raspberry_pi_i2c-detect.png?1396790698)
+
+Finally, downloading the code.
+
+The older version listed below is what was used in this project.
+
 ###### Old:
-Download the code (legacy branch, code used here)
+Download the code (legacy branch)
 ```
 sudo apt-get install -y git build-essential python-dev
 git clone https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy
