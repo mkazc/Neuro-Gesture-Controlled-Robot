@@ -88,14 +88,14 @@ Finally, downloading the code.
 
 The older version listed below is what was used in this project.
 
-###### Old:
+#### Old:
 Download the code (legacy branch)
 ```
 sudo apt-get install -y git build-essential python-dev
 git clone https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy
 ```
 Use the files in Adafruit_PWM_Servo_Driver.
-###### New:
+#### New:
 ```
 sudo apt-get install -y git build-essential python-dev
 git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
