@@ -11,7 +11,7 @@ Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using My
 ###### Python Version : 2.7.13
 ###### GPIO Version: 0.6.3
 
-## Libraries/SDKs/etc. used :
+## Libraries / SDKs / etc. :
 *  [PyNetworkTables](https://github.com/robotpy/pynetworktables) - for using networktables between the Rasp. Pi and the PC
 #### On the Rasp. Pi: 
 *  [PyoConnect 1.0](http://www.fernandocosentino.net/pyoconnect/) - for using Myo armband with the Pi
