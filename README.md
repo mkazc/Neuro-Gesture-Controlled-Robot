@@ -40,6 +40,7 @@ Now reboot.
 
 Download and unzip PyoConnect 1.0 folder.
 Then move files to folder with the code that will be used.
+> This final step is already done in this repo.
 
 #### Pynetworktables :
 ```
@@ -92,7 +93,7 @@ The older version listed below is what was used in this project.
 Download the code (legacy branch)
 ```
 sudo apt-get install -y git build-essential python-dev
-git clone https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy
+git clone -b legacy --single-branch https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code.git
 ```
 Use the files in Adafruit_PWM_Servo_Driver.
 #### New:
