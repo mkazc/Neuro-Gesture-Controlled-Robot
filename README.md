@@ -18,7 +18,7 @@ Controls small two-wheeled bot with PWM/Servo Pi HAT and Raspberry Pi 3 using My
 *  [Adafruit PWM Servo Library](https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code/tree/legacy) / [BBIO 12C](https://learn.adafruit.com/setting-up-io-python-library-on-beaglebone-black/i2c) - for driving motors with 16-Channel PWM Pi HAT
 * Pynetworktables
 #### On the Local PC :
-* [Emotiv SDK](https://github.com/Emotiv/community-sdk) - for using Emotiv EPOC information and using it
+* [Emotiv SDK](https://github.com/Emotiv/community-sdk) - for utilizing Emotiv EPOC information
 * Pynetworktables
 
 ## Installing Libraries on Rasp. Pi:
